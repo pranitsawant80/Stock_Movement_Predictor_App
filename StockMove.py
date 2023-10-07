@@ -10,7 +10,7 @@ model_path = 'https://github.com/pranitsawant80/Stock_Movement_Predictor_App/blo
 lr_clf_loaded = pickle.load(open(model_path, 'rb'))
 
 # Load the fitted TF-IDF vectorizer
-vectorizer_path = r'C:\Users\DELL\Desktop\PRTFLIO\Data-Science-Projects\Sentiment_Analysis_for_Dow_Jones_(DJIA_Stock)\tfidf_vectorizer.pkl'  # Replace with the correct file path
+vectorizer_path = 'https://github.com/pranitsawant80/Stock_Movement_Predictor_App/blob/main/tfidf_vectorizer.pkl'  # Replace with the correct file path
 tfidf_vectorizer = pickle.load(open(vectorizer_path, 'rb'))
 
 # Function for cleaning the data
