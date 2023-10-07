@@ -1,3 +1,4 @@
+from collections import namedtuple
 import streamlit as st
 import predict
 import pickle
