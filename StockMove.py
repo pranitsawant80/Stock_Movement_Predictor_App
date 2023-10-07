@@ -1,6 +1,5 @@
 from collections import namedtuple
 import streamlit as st
-import predict
 import pickle
 import pandas as pd
 from nltk.corpus import stopwords
