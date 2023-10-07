@@ -6,7 +6,7 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
 # Load the trained logistic regression model
-model_path = logistic_regression_model.pkl
+model_path = 'https://github.com/pranitsawant80/Stock_Movement_Predictor_App/blob/main/logistic_regression_model.pkl'
 lr_clf_loaded = pickle.load(open(model_path, 'rb'))
 
 # Load the fitted TF-IDF vectorizer
