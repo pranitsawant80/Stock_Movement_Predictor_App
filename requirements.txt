@@ -1,4 +1,5 @@
 nltk
+pip
 altair==4.2.2
 anaconda==0.0.1.1
 anyio==3.6.2
