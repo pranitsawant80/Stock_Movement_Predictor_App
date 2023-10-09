@@ -71,7 +71,7 @@ if st.button("Predict"):
 
 
 # Add a sidebar header
-st.sidebar.header("More")
+st.sidebar.header("More to explore")
 st.sidebar.subheader('"Rate the Performance of the predictor"')
 # Create a selectbox for rating
 rating = st.sidebar.selectbox("Select your rating:", ["1 (Low)", "2", "3", "4", "5 (High)"])
@@ -80,3 +80,23 @@ st.sidebar.write(f"You rated the prediction as: {rating}")
 # Add a link to the Reddit website with the header "Reddit Website"
 st.sidebar.subheader('Visit Reddit News')
 st.sidebar.markdown("[Visit](https://www.reddit.com/r/worldnews/)")
+
+# # URL to the PDF file on Google Drive (replace with your own URL)
+st.subheader("Download Section")
+
+# URL to the PDF file on Google Drive (replace with your own URL)
+pdf_url = "https://drive.google.com/file/d/13Rc2Et8KRM4HIUyfqPfBvVeWrfrk_4fk/view?usp=sharing"
+
+# Create a download button
+if st.button("Download User Guidelines"):
+    st.markdown("Downloading User Guidelines... Please wait.")
+    # Use 'requests' library to download the file
+    import requests
+
+    response = requests.get(pdf_url)
+    if response.status_code == 200:
+        # Set the content type to PDF
+        st.markdown("Download Complete!")
+        st.markdown(f"Downloaded file as [User Guidelines.pdf]({pdf_url})")
+    else:
+        st.markdown("Failed to download User Guidelines. Please try again later.")
