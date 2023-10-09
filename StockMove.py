@@ -69,3 +69,14 @@ if st.button("Predict"):
     prediction = predict_stock_price_direction(user_input)
     st.write(prediction)
 
+
+# Add a sidebar header
+st.sidebar.header("More")
+st.sidebar.subheader('"Rate the Performance of the predictor"')
+# Create a selectbox for rating
+rating = st.sidebar.selectbox("Select your rating:", ["1 (Low)", "2", "3", "4", "5 (High)"])
+st.sidebar.write(f"You rated the prediction as: {rating}")
+
+# Add a link to the Reddit website with the header "Reddit Website"
+st.sidebar.subheader('Visit Reddit News')
+st.sidebar.markdown("[Visit](https://www.reddit.com/r/worldnews/)")
