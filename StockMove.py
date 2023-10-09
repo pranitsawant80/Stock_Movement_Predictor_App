@@ -5,11 +5,11 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
 # Load the trained logistic regression model
-model_path = r'C:\Users\DELL\Desktop\PRTFLIO\Data-Science-Projects\Sentiment_Analysis_for_Dow_Jones_(DJIA_Stock)\logistic_regression_model.pkl'  # Replace with the correct file path
+model_path = 'logistic_regression_model.pkl'  # Replace with the correct file path
 lr_clf_loaded = pickle.load(open(model_path, 'rb'))
 
 # Load the fitted TF-IDF vectorizer
-vectorizer_path = r'C:\Users\DELL\Desktop\PRTFLIO\Data-Science-Projects\Sentiment_Analysis_for_Dow_Jones_(DJIA_Stock)\tfidf_vectorizer.pkl'  # Replace with the correct file path
+vectorizer_path ='requirements.txt'  # Replace with the correct file path
 tfidf_vectorizer = pickle.load(open(vectorizer_path, 'rb'))
 
 # Function for cleaning the data
