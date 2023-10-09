@@ -9,7 +9,7 @@ model_path = 'logistic_regression_model.pkl'  # Replace with the correct file pa
 lr_clf_loaded = pickle.load(open(model_path, 'rb'))
 
 # Load the fitted TF-IDF vectorizer
-vectorizer_path ='requirements.txt'  # Replace with the correct file path
+vectorizer_path ='tfidf_vetorizer.pkl'  # Replace with the correct file path
 tfidf_vectorizer = pickle.load(open(vectorizer_path, 'rb'))
 
 # Function for cleaning the data
