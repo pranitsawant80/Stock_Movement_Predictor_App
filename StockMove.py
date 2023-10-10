@@ -2,6 +2,7 @@ import nltk
 nltk.download('wordnet')
 nltk.download('stopwords')
 nltk.download('omw-1.4')
+nltk.download('popular')
 # try:
 #     nltk.data.find('corpora/stopwords.zip')
 # except LookupError:
