@@ -1,9 +1,8 @@
 import nltk
-from nltk.corpus import stopwords
-
-# if not nltk.data.find('stopwords'):
-#     nltk.download('stopwords')
-
+try:
+    nltk.data.find('corpora/stopwords.zip')
+except LookupError:
+    nltk.download('stopwords')
 # Your Streamlit app code goes here
 
 import streamlit as st
