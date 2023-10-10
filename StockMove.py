@@ -44,14 +44,15 @@ def predictor(newdata):
     # Make a prediction
     predict = lr_clf_loaded.predict(vectorized_data)
 
-    if len(newdata) >= 2500:
+    if len(newdata.split(" ")) >= 300:
         if predict == 1:
             prediction = 'The Index Value will remain the SAME or will go UP.'
         else:
             prediction = 'The Index Value will go DOWN!'
         return prediction
     else:
-        return ('Collect more news (>=2000 words should be entered)', f'No of words in the document is :{len(newdata)}')
+        return ('Collect more news (>=300 words should be entered)',f'No of words in the document is :{len(newdata.split(" "))}')
+
 
 # Streamlit app header
 st.title("DJIA index predictor")
