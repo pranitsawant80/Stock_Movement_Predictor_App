@@ -1,15 +1,10 @@
 import nltk
-# nltk.download('wordnet')
-# nltk.download('stopwords')
-# nltk.download('omw-1.4')
 nltk.download('popular')
-
 import streamlit as st
 import pickle
 import pandas as pd
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
-
 
 # Load the trained logistic regression model
 model_path = 'logistic_regression_model.pkl'  # Replace with the correct file path
