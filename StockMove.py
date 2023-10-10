@@ -54,7 +54,7 @@ def predictor(newdata):
     # Make a prediction
     predict = lr_clf_loaded.predict(vectorized_data)
 
-    if len(newdata) >= 2000:
+    if len(newdata) >= 2500:
         if predict == 1:
             prediction = 'The Index Value will remain the SAME or will go UP.'
         else:
@@ -74,7 +74,7 @@ def predict_stock_price_direction(input_text):
     # Check if the input text is not empty
     if input_text:
         # Perform the prediction using your functions
-        prediction = predictor([input_text])
+        prediction = predictor(input_text)
         return prediction
     else:
         return "ERROR"
