@@ -1,3 +1,11 @@
+import nltk
+from nltk.corpus import stopwords
+
+if not nltk.data.find('stopwords'):
+    nltk.download('stopwords')
+
+# Your Streamlit app code goes here
+
 import streamlit as st
 import pickle
 import pandas as pd
