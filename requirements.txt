@@ -135,3 +135,4 @@ wcwidth==0.2.5
 xlrd==2.0.1
 XlsxWriter==3.0.8
 zipp==3.14.0
+nltk.corpus.wordnet
