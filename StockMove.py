@@ -1,8 +1,10 @@
 import nltk
-try:
-    nltk.data.find('corpora/stopwords.zip')
-except LookupError:
-    nltk.download('stopwords')
+nltk.download('wordnet')
+nltk.download('stopwords')
+# try:
+#     nltk.data.find('corpora/stopwords.zip')
+# except LookupError:
+#     nltk.download('stopwords')
 # Your Streamlit app code goes here
 
 import streamlit as st
