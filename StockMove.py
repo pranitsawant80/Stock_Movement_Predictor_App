@@ -1,10 +1,9 @@
-import nltk
 import streamlit as st
 import pickle
 import pandas as pd
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
-nltk.download('stopwords')
+
 
 # Load the trained logistic regression model
 model_path = 'logistic_regression_model.pkl'  # Replace with the correct file path
