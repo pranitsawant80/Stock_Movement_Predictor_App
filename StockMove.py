@@ -90,7 +90,7 @@ st.sidebar.markdown("[Visit](https://www.reddit.com/r/worldnews/)")
 st.subheader("Download Section")
 
 # URL to the PDF file on Google Drive (replace with your own URL)
-pdf_url = "https://drive.google.com/file/d/1YcrQSN8RezgbYAm8ZD_m-1DHNfnmVnJs/view?usp=sharing"
+pdf_url = "https://firebasestorage.googleapis.com/v0/b/lets-s-chat-cbf88.appspot.com/o/Profile%2FUser%20Manual.pdf?alt=media&token=dafe1f55-7548-41ca-8d90-19053f80ff64"
 
 # Create a download button
 if st.button("Download User Guidelines"):
